@@ -1,0 +1,19 @@
+.etiqueta {
+    display: flex;
+    gap: 0.5em;
+    margin: 1em;
+  }
+  
+  .etiqueta button {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .etiqueta .active {
+    background-color: #c4b5fd;
+    color: white;
+  }
+  

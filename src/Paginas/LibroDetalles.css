@@ -1,0 +1,19 @@
+.libro-detalles {
+    padding: 20px;
+  }
+  
+  .libro-detalles h2 {
+    font-size: 2rem;
+    color: #6b21a8;
+  }
+  
+  .libro-detalles h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .libro-detalles p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
