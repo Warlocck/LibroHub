@@ -1,6 +1,7 @@
 // Libros.js
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import './Libros.css'; // Asegúrate de importar el archivo CSS donde defines los estilos
 
 const Libros = () => {
     const [libros, setLibros] = useState([]);
@@ -32,22 +33,22 @@ const Libros = () => {
 
     return (
         <div>
-            <h2>Lista de Libros</h2>
             {error ? (
                 <p style={{ color: 'red' }}>Error: {error}</p>
             ) : (
                 <div id="info">
                     {libros.map((libro) => (
-                        <div key={libro.id}>
-                            <Link to={`/libro/${libro.id}`}>
-                                <h3>{libro.titulo}</h3>
-                            </Link>
-                            <p>Autor: {libro.autor}</p>
-                            <p>Categoría: {libro.categoria}</p>
-                            <p>Precio: S/.{libro.precio}</p>
-                            <p>Stock: {libro.stock}</p>
-                            <img src={libro.imagen} alt={libro.titulo} width="100" />
-                            <hr />
+                        <div className="book-card" key={libro.id}>
+                            <img src={libro.imagen} alt={libro.titulo} className="book-image" />
+                            <div className="book-info">
+                                <Link to={`/libro/${libro.id}`} className="book-title">
+                                    <h3>{libro.titulo}</h3>
+                                </Link>
+                                <p className="book-author">Autor: {libro.autor}</p>
+                                <p className="book-category">Categoría: {libro.categoria}</p>
+                                <p className="book-price">Precio: S/.{libro.precio}</p>
+                                <button className="add-to-cart-btn">Añadir al Carrito</button>
+                            </div>
                         </div>
                     ))}
                 </div>
