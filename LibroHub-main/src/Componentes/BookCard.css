@@ -1,0 +1,16 @@
+.book-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  .image-placeholder {
+    width: 80px;
+    height: 80px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    margin: 0 auto 0.5em;
+  }
+  
