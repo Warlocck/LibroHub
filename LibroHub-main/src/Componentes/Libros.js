@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Importar useNavigate
+import { useNavigate } from 'react-router-dom'; 
 import './Libros.css';
 import Lista from './LinkedList';  
 
 const Libros = ({ addToCart }) => {
     const [libros, setLibros] = useState([]);
     const [error, setError] = useState(null);
-    const navigate = useNavigate(); // Inicializar useNavigate
+    const navigate = useNavigate(); 
 
     const fetchLibros = async () => {
         try {
@@ -38,7 +38,7 @@ const Libros = ({ addToCart }) => {
     }, []);
 
     const handleImageClick = (id) => {
-        navigate(`/libro/${id}`); // Navegar a la ruta del libro
+        navigate(`/libro/${id}`); 
     };
 
     return (
@@ -50,10 +50,12 @@ const Libros = ({ addToCart }) => {
                     {libros.map((libro) => (
                         <div className="book-card" key={libro.id}>
                             <img 
+                            height={"40%"}
+                            width={"70%"}
                                 src={libro.imagen} 
                                 alt={libro.titulo} 
                                 className="book-image" 
-                                onClick={() => handleImageClick(libro.id)} // Manejar clic en la imagen
+                                onClick={() => handleImageClick(libro.id)} 
                             />
                             <div className="book-info">
                                 <h3>{libro.titulo}</h3>

@@ -4,7 +4,7 @@ import Libros from '../Componentes/Libros';
 const Home = ({ addToCart }) => {
     return (
         <div>
-            <Libros addToCart={addToCart} /> {/* Pasa addToCart a Libros */}
+            <Libros addToCart={addToCart} />  
         </div>
     );
 };

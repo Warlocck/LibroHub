@@ -9,10 +9,8 @@ function read_datos() {
     }).then(result => result.json())
     .then(data => {
         console.log(data);
-        // Selecciona el elemento con id 'info'
         const infoElement = document.getElementById('info');
-        
-        // Recorre cada libro y crea un bloque HTML
+
         let htmlContent = '';
         data.forEach(libro => {
             htmlContent += `
@@ -28,7 +26,6 @@ function read_datos() {
             `;
         });
         
-        // Asigna el contenido HTML generado al elemento
         infoElement.innerHTML = htmlContent;
     }).catch(error => {
         console.error('Error al obtener los datos:', error);

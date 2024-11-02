@@ -32,7 +32,7 @@ class Lista {
             nodo = nodo.next; 
         }
 
-        return libros.sort((a, b) => a.titulo.localeCompare(b.titulo));
+        return libros.sort((a, b) => a.autor.localeCompare(b.autor));
     }
 }
 
