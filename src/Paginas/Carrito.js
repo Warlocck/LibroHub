@@ -26,7 +26,6 @@ const Carrito = ({ carrito, removeFromCart }) => {
                             </button>
                         </div>
                     ))}
-                    {/* Botón de proceder con el pago */}
                     <button className="proceed-to-payment-button" onClick={handleProceedToPayment}>
                         Proceder con el pago
                     </button>

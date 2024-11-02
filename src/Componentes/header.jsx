@@ -1,8 +1,9 @@
+// Header.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
 
-const Header = ({ usuario }) => (
+const Header = ({ usuario, carritoCount }) => (
   <header className="header">
     <div className="top-bar">
       <Link to="/" className="logo">LibroHub</Link>
@@ -28,7 +29,7 @@ const Header = ({ usuario }) => (
         <input type="text" placeholder="Buscar libros..." className="search-bar" />
         <button className="search-button">Buscar</button>
       </div>
-      <Link to="/carrito" className="cart-button">🛒 Mi Compra (0)</Link>
+      <Link to="/carrito" className="cart-button">🛒 Mi Compra ({carritoCount})</Link>
     </div>
   </header>
 );
