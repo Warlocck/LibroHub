@@ -63,9 +63,3 @@ npm run build
 ## Contexto
 
 Proyecto desarrollado durante la formación universitaria en Ingeniería de Sistemas, orientado a la aplicación de conceptos de desarrollo de interfaces web, componentes reutilizables, navegación entre vistas y manejo de estado en React.
-
-## Autor
-
-**Andre Huaroc (Warlocck)**
-
-[GitHub](https://github.com/Warlocck)
